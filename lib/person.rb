@@ -20,3 +20,22 @@ class Person
         @hygiene = 10 if @hygiene > 10
         @hygiene = 0 if @hygiene < 0
       end
+
+  def happy?
+    happiness > 7
+  end
+
+  def clean?
+    hygiene > 7
+  end
+
+  def take_bath
+    self.hygiene += 4
+    "♪ Rub-a-dub just relaxing in the tub ♫"
+  end
+
+  def work_out
+    self.hygiene -= 3
+    self.happiness += 2
+    "♪ another one bites the dust ♫"
+  end
